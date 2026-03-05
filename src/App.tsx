@@ -3,6 +3,7 @@ import SearchForm from "@/components/SearchForm";
 import CharacterCard from "@/components/CharacterCard";
 import { fetchCharacter } from "@/services/api";
 import type { Character } from "@/types/character";
+import logo from "@/assets/Logo.jpg";
 import "./App.css";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -29,7 +30,12 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-8 px-4 py-8 bg-background">
       <div className="w-full max-w-lg flex flex-col items-center gap-6">
-        <header className="text-center">
+        <header className="text-center flex flex-col items-center gap-3">
+          <img
+            src={logo}
+            alt="Star Wars"
+            className="h-20 w-auto object-contain"
+          />
           <h1 className="text-3xl font-bold text-foreground drop-shadow-sm">
             Star Wars
           </h1>
