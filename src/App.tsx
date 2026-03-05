@@ -3,7 +3,7 @@ import SearchForm from "@/components/SearchForm";
 import CharacterCard from "@/components/CharacterCard";
 import { fetchCharacter } from "@/services/api";
 import type { Character } from "@/types/character";
-import logo from "@/assets/Logo.jpg";
+import logo from "@/assets/Logo.png";
 import "./App.css";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -34,11 +34,8 @@ function App() {
           <img
             src={logo}
             alt="Star Wars"
-            className="h-20 w-auto object-contain"
+            className="h-32 w-auto object-contain"
           />
-          <h1 className="text-3xl font-bold text-foreground drop-shadow-sm">
-            Star Wars
-          </h1>
           <p className="mt-1 text-sm text-muted-foreground">
             Busca un personaje por ID
           </p>

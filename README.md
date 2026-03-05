@@ -139,10 +139,10 @@ starWars/
 │   ├── types/
 │   │   └── character.ts  # Tipo TypeScript del personaje
 │   └── assets/
-│       └── Logo.jpg      # Logo del proyecto (cabecera de la web)
+│       └── Logo.png      # Logo del proyecto (cabecera de la web)
 ├── public/
-│   ├── Logo.jpg         # Logo del proyecto (favicon y copia para la web)
-│   └── vite.svg         # (sin uso; se usa Logo.jpg)
+│   ├── Logo.png         # Logo del proyecto (favicon)
+│   └── vite.svg         # (sin uso; se usa Logo.png)
 ├── package.json
 ├── vite.config.ts
 └── README.md
