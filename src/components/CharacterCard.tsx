@@ -60,7 +60,7 @@ function ListSection({
 export default function CharacterCard({ character }: CharacterCardProps) {
   return (
     <div className="w-full max-w-lg animate-in fade-in slide-in-from-bottom-4 duration-500">
-      <div className="rounded-xl border border-border bg-card shadow-lg shadow-primary/5 overflow-hidden">
+      <div className="rounded-2xl border border-border bg-card/90 backdrop-blur-sm shadow-xl shadow-primary/10 overflow-hidden">
         {/* Header */}
         <div className="relative bg-gradient-to-r from-primary to-accent px-6 py-5">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-50" />
@@ -69,7 +69,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
               <User className="h-6 w-6 text-primary-foreground" />
             </div>
             <div>
-              <h2 className="text-xl font-bold text-primary-foreground" style={{ fontFamily: "var(--font-display)" }}>
+              <h2 className="text-xl font-bold text-primary-foreground font-display">
                 {character.name}
               </h2>
               <p className="text-sm text-primary-foreground/75 capitalize">
